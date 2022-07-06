@@ -1,22 +1,12 @@
-# create-svelte
+# Setup
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+`npm install` to get the Svelte dependencies set up.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte
-
-# create a new project in my-app
-npm init svelte my-app
-```
+Change into the /sever directory and run `npm install` there to set up the server
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
@@ -35,4 +25,8 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+# Deployment
+
+Once ready you can now deploy your app to a Twilio Functions server with `twilio serverless:deploy`.
+
+Go to the Functions URL and in the assets section you will see the compiled Svelte app. Run the index.html file.
