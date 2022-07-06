@@ -1,0 +1,5 @@
+ACCOUNT_SID=AC
+AUTH_TOKEN=
+
+# SIP URL of the PBX trunk
+SIP_DOMAIN=
