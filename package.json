@@ -2,7 +2,7 @@
 	"name": "number-migrate",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev",
+		"dev": "svelte-kit dev --port",
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
@@ -12,10 +12,14 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-static": "^1.0.0-next.34",
 		"@sveltejs/kit": "next",
 		"svelte": "^3.44.0",
 		"svelte-check": "^2.7.1",
 		"typescript": "^4.7.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"axios": "^0.27.2"
+	}
 }
